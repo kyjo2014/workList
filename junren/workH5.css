@@ -175,33 +175,50 @@ body{
 
 }
 .personPotatoAndName{
-	height: 40%;
+	/*height: 40%;*/
 	/*display: flex;*/
 	/*display: -webkit-flex;*/
 	justify-content: flex-start;
 	align-items: center;	
 }
-.personPotatoAndName>img{
-	margin-left:10%;
-	margin-top: 10%;
-	border-radius:100%;
+/*.personPotatoAndName>img{*/
+	/*!*margin-left:10%;*!*/
+	/*!*margin-top: 10%;*!*/
+	/*border-radius:100%;*/
+	/*width: 20%;*/
+	/*!*height:80%;*!*/
+/*}*/
+.photo {
+	border-radius: 100%;
 	width: 20%;
-	/*height:80%;*/
+	overflow: hidden;
+	padding-bottom: 20%;
+	height: 0;
+	display: inline-block;
+}
+.photo img{
+	width: 150%;
+	margin-left: -10px;
 }
 .personPotatoAndName>.name {
 	display:inline-block;
+	margin-left: 5%;
 }
 .personPotatoAndName>table{
 	margin-left: 5%;
+
+}
+td{
+	font-size: 0.6rem;
 }
 .name{
 	width: 50%;
-	height: 80%;
-	padding: 10% 5% 0 0;
+	/*height: 80%;*/
+	/*padding: 10% 5% 0 0;*/
 }
 .chinaName{
 	font-size: 1.5em;
-	font-weight: 10px;
+	/*font-weight: 10px;*/
 
 }
 .englishName{
