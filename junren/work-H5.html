@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=640, user-scalable=no,target-densitydpi=device-dpi"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="workH5.css">
+    <link rel="stylesheet" type="text/css" href="workLunbo.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="jquery.touchSwipe.min.js"></script>
+    <!-- <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script> -->
+    <script src="jquery.form.js"></script>
+    <title>竣仁网络作品集</title>
+    <style type="text/css" media="screen">
+
+    </style>
+</head>
+
+<body>
+<img id="uppic1">
+    <section class="logo" style="z-index: 20;">
+        <img src="logo.png" alt="竣仁网络" width="100%" />
+    </section>
+    <section id="firstPage" class="pages pageShow">
+        <a id="login" class="icon icon-user"></a>
+        <section id="mask1" class="mask"></section>
+        <section id="loginWrap" class="enter">
+            <span id="close" class="icon-cross"></span>
+            <section id="loginContext">
+                <section class="loginInfo">
+                    <img src="JR.png" alt="logo" width="30%">
+                    <p class="remindWord">管理者登录</p>
+                    <section class="inputWrap">
+                         <form id="login">
+                        <input type="text" id="email"name="email" placeholder="账号" size="25" maxlength="20" tabindex="3"  />
+                        </br>
+                        <input name="password" type="password" id="password" placeholder="密码"tabindex="2"size="25">
+                        </form>
+                        <div><span id="wrongWord"></span></div>
+                        <div id="loginBtn">登陆</div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="sLogo">
+            <img src="MLOGO.png" alt="竣仁专注网络开发" width="100%">
+        </section>
+        <a id="openBtn" class="button">打开作品</a>
+    </section>
+    <section id="workPage" class="pages">
+        <a id="backFirst" class="icon icon-home"></a>
+        <div id="container" >
+            <div id="main" >
+            </div>
+        </div>
+        <div id="right">
+            <div id="text0" class="text" style="top:0%;left:10%;z-index:1">
+               <div class="textTop"><p class="titleStyle"><p><hr style="color="rgb(55,142,255);" />
+               <p class="introStyle"></p>
+               </div>
+               <div class="textUnder">
+               <div id="jishu">技术难点</div>
+               <div class="contentStyle"></div>
+               </div>
+            </div>
+            <a class="buttonStyle" >查看详情</a>
+        </div>
+        <a id="linkBtn" class="button">联系我们</a>
+    </section>
+    <section id="linkPage" class="pages">
+        <a id="backFirst" class="icon icon-home"></a>
+        <section class="personWrap">
+            <section class="personInfo">
+                <section class="personPotatoAndName">
+                    <img id="colleague1" src="" alt="黎老板的照片">
+                    <section class="name">
+                        <span id="chinaName1" class="chinaName">2</span>
+                        <br><span id="englishName1" class="englishName">1</span>
+                    </section>
+                </section>
+                <table cellspacing="26">
+                    <tr>
+                        <td class="icon-phone"></td>
+                        <td id="tel1"></td>
+                        <td class="linkFunction" id="call"><a class="a1">拨号</a></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-bubbles"></td>
+                        <td id="wechat1"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="icon-envelop"></td>
+                        <td id="email1"></td>
+                       
+                    </tr>
+                </table>
+            </section>
+            <section class="personInfo">
+                <section class="personPotatoAndName">
+                    <img id="colleague2" src="" alt="黎老板的照片">
+                    <section class="name">
+                        <span id="chinaName2" class="chinaName"></span>
+                        <br><span id="englishName2"class="englishName"></span>
+                    </section>
+                </section>
+                <table cellspacing="26">
+                    <tr>
+                        <td class="icon-phone"></td>
+                        <td id="tel2"></td>
+                        <td class="linkFunction" id="call"><a class="a2">拨号</a></td>
+                    </tr>
+                    <tr>
+                        <td class="icon-bubbles"></td>
+                        <td id="wechat2">WECHAT-NUMER</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="icon-envelop"></td>
+                        <td id="email2"></td>
+                        
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section id="backFirstBtn" class="button">回到首页</section>
+    </section>
+    <section id="managePage" class="pages">
+        <a id="backFirst" class="icon icon-home"></a>
+           <section class="mask" id="mask3"></section>
+            <section class="enterde remindWrap1" id="remindWrap2">
+            <span id="closede" class="icon-cross"></span>
+            <span>是否删除作品</span>
+            <div id="detitle"></div>
+            <section class="ifBtnWrap">
+                <span id="delete1">删除</span>
+                <span id="noneBtn1">取消</span>
+            </section>
+        </section>
+        <section class="welcomeWrap">
+            <span class="welcomeWord">欢迎回家，JUNREN!</span>
+            <span class="uploadBtn " id="uploadBtn"> 上传作品</span>
+        </section>
+        <ul id="manageWrap"class="manageWrap"></ul>
+    </section>
+    <section id="updatePage" class="pages">
+        <a id="backFirst" class="icon icon-home"></a>
+           <section class="mask" id="mask2"></section>
+        <section class="enterif remindWrap1" id="remindWrap">
+            <span id="closeIf" class="icon-cross"></span>
+            <span>是否放弃<br/>修改/上传内容</span>
+            <section class="ifBtnWrap">
+                <span id="giveupBtn">放弃</span>
+                <span id="noneBtn">取消</span>
+            </section>
+        </section>
+            <section class="editWrap">  
+             <a id="backFirst" class="icon icon-home"></a>   
+            <section class="uploadPictureWrap">
+                <section class="wrap" id="uploadPicture">
+ 				<img id="uppic" height="100%" src="上传十字.png">
+                </section>
+                <section class="wrap">
+                    <span>点击左侧<br/>上传/替换图片</span>
+                    <span> 注：图片大小为240*180</span>
+                </section>    
+            </section >
+            <section class="infoWrap">
+                <form id="objectData" >
+                <input id="image" name="image" type="file" style="display: none"/>  
+                <input id="title" type="text" name="title" placeholder="请输入标题"  width="100%" height="10%"/>
+                <hr style="background:#999;height:0.5vw"/>
+                <p ><span class="point">注：标题为15-35字符为宜</span></p>
+                <input id="url" type="text" name="url" placeholder="在此输入URL" />
+                 <hr style="background:#999;height:0.2vw"/>
+                <textarea id="intro"  name="intro" placeholder="请在此输入简介" /></textarea>
+                <p ><span class="point">注：简介为60-100字符为宜</span></p>
+                <textarea name="content"  id="content" placeholder="请在此输入技术难点"/></textarea>
+                <p ><span class="point">注：分点表示，每点间空一行</span></p>
+                </form>
+                <section class="buttonWrap">
+                   <span id="okBtn">完成</span>
+                   <span id="cancleBtn">取消</span>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+<script type="text/javascript" src="workH5.js"></script>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript" src="workLunbo.js" ></script>
+<script>
+first();
+second();
+three();
+four();
+five();
+</script>
+<script>
+/** * 禁止浏览器下拉回弹 */
+(function stopDrop() {
+    var lastY;
+    //最后一次y坐标点 
+    $(document.body).on('touchstart', function (event) {
+        lastY = event.originalEvent.changedTouches[0].clientY;
+        //点击屏幕时记录最后一次Y度坐标。 
+    });
+    $(document.body).on('touchmove', function (event) {
+        var y = event.originalEvent.changedTouches[0].clientY;
+        var st = $(this).scrollTop();
+        //滚动条高度 
+        if (y >= lastY && st <= 10) {
+            //如果滚动条高度小于0，可以理解为到顶了，且是下拉情况下，阻止touchmove事件。 
+            lastY = y; event.preventDefault();
+        } lastY = y;
+    });
+})()
+</script>
+</html>
